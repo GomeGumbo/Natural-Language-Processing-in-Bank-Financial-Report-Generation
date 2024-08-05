@@ -1,0 +1,55 @@
+﻿<Page x:Class="WpfApplication1.CrePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApplication1"
+      mc:Ignorable="d" 
+      d:DesignHeight="527" d:DesignWidth="988"
+      Title="CrePage">
+
+    <Grid>
+        <TextBox Style="{StaticResource TextBoxStyle1}" x:Name="EmpNametxt" FontSize="25" 
+    		HorizontalAlignment="Left" Height="43" TextWrapping="Wrap" VerticalAlignment="Top" Width="290" Margin="487,26,0,0" Background="Gray"/>
+        <TextBox Style="{StaticResource TextBoxStyle1}" x:Name="EmpNotxt" FontSize="25"
+    		HorizontalAlignment="Left" Height="44" TextWrapping="Wrap" VerticalAlignment="Top" Width="290" Margin="484,84,0,0" Background="Gray"/>
+        <Label x:Name="FnrLb" Content="Emp Name
+               " HorizontalAlignment="Left" FontSize="30" Margin="320,16,0,0" VerticalAlignment="Top" Width="162" Height="53"/>
+        <Image x:Name="icons8_male_user_100px_png" Margin="10,10,762,335" Source="icons8_male_user_100px.png" Stretch="Fill"/>
+        <Label x:Name="UserPaLb_Copy" Content="Create Account" HorizontalAlignment="Left" FontSize="30" FontWeight="Bold" Margin="10,197,0,0" VerticalAlignment="Top" Width="228"/>
+        <TextBox Style="{StaticResource TextBoxStyle1}" x:Name="UserNametxt" FontSize="25"
+        	HorizontalAlignment="Left" Height="42" TextWrapping="Wrap" VerticalAlignment="Top" Width="290" Margin="487,145,0,0" Background="Gray"/>
+        <Label x:Name="EmpNLb" Content="Emp No." HorizontalAlignment="Left" FontSize="30" Margin="320,84,0,0" VerticalAlignment="Top" Width="140" RenderTransformOrigin="0.461,1.349" Height="56"/>
+        <TextBox Style="{StaticResource TextBoxStyle1}" x:Name="Phonetxt" FontSize="25"
+        	HorizontalAlignment="Left" Height="42" TextWrapping="Wrap" VerticalAlignment="Top" Width="290" Margin="487,301,0,0" Background="Gray"/>
+        <Label x:Name="UsLB" Content="Username"  HorizontalAlignment="Left" FontSize="30" Margin="320,145,0,0" VerticalAlignment="Top" Width="151" Height="47"/>
+        <TextBox Style="{StaticResource TextBoxStyle1}" x:Name="Addresstxt" FontSize="25"
+        	HorizontalAlignment="Left" Height="42" TextWrapping="Wrap" VerticalAlignment="Top" Width="290" Margin="487,357,0,0" Background="Gray"/>
+        <Label x:Name="PhLb" Content="Phone No." HorizontalAlignment="Left" FontSize="30" Margin="320,301,0,0" VerticalAlignment="Top" Width="140" Height="42"/>
+        <TextBox Style="{StaticResource TextBoxStyle1}" x:Name="Passtxt" FontSize="25"
+        	HorizontalAlignment="Left" Height="44" TextWrapping="Wrap" VerticalAlignment="Top" Width="290" Margin="487,414,0,0" Background="Gray"/>
+        <Label x:Name="AdLb" Content="Address" HorizontalAlignment="Left" FontSize="30" Margin="320,362,0,0" VerticalAlignment="Top" Width="140" Height="44"/>
+        <Label x:Name="PwLb" Content="Password" HorizontalAlignment="Left" FontSize="30" Margin="320,421,0,0" VerticalAlignment="Top" Width="140" Height="43"/>
+        <Button Style="{StaticResource ButtonStyle1}" x:Name="SubBtn" Content="Submit" FontSize="25" FontWeight="Bold" Background="Gray"   
+        	HorizontalAlignment="Left" VerticalAlignment="Top" Width="148" Margin="830,455,0,0" Height="50" Click="SubBtn_Click"/>
+        <Button Style="{StaticResource ButtonStyle1}" x:Name="CancelBtn_Copy" Content="Cancel" FontSize="25" FontWeight="Bold" Background="Gray"   
+        	HorizontalAlignment="Left" VerticalAlignment="Top" Width="148" Margin="830,11,0,0" Height="50" />
+        <Button Style="{StaticResource ButtonStyle1}" x:Name="DelAccBtn_Copy1" Content="Employee Accounts" FontSize="20" FontWeight="Bold" Background="Red"   
+        	HorizontalAlignment="Left" VerticalAlignment="Top" Width="227" Margin="10,267,0,0" Height="50" Click="DelAccBtn_Copy1_Click" />
+        <Label x:Name="GeLb" Content="Gender"  HorizontalAlignment="Left" FontSize="30" Margin="320,210,0,0" VerticalAlignment="Top" Width="140" Height="43" RenderTransformOrigin="0.7,-0.022"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="487,225,0,0" VerticalAlignment="Top" Width="287" Height="37" Background="Gray" FontSize="25">
+            <ComboBoxItem Content="Male"/>
+            <ComboBoxItem Content="Female"/>
+        </ComboBox>
+        <ComboBox x:Name="Status" HorizontalAlignment="Left" Margin="484,480,0,0" VerticalAlignment="Top" Width="287" Height="37" Background="Gray" FontSize="25">
+            <ComboBoxItem Content="Admin"/>
+            <ComboBoxItem Content="User"/>
+        </ComboBox>
+        <Label x:Name="PwLb_Copy" Content="Role" HorizontalAlignment="Left" FontSize="30" Margin="320,474,0,0" VerticalAlignment="Top" Width="140" Height="43"/>
+        <Button Style="{StaticResource ButtonStyle1}" x:Name="DelAccBtn_Copy" Content="Clients Accounts" FontSize="20" FontWeight="Bold" Background="Red"   
+        	HorizontalAlignment="Left" VerticalAlignment="Top" Width="227" Margin="11,349,0,0" Height="50" Click="DelAccBtn_Copy1_Click" />
+        <Button Style="{StaticResource ButtonStyle1}" x:Name="CCaccBtn_Copy1" Content="Create &#xD;&#xA;Client&#xD;&#xA;Account" FontSize="25" FontWeight="Bold" Background="Gray"   
+        	HorizontalAlignment="Left" VerticalAlignment="Top" Width="163" Margin="815,163,0,0" Height="135" Click="CCaccBtn_Copy1_Click" />
+
+    </Grid>
+</Page>

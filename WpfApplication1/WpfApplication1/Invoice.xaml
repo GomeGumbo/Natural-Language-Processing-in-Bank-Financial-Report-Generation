@@ -1,0 +1,87 @@
+﻿<Window x:Class="WpfApplication1.Invoice"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        ResizeMode="NoResize"
+        Background="White"
+        Title="Invoice" Height="763.166" Width="535.5" WindowStartupLocation="CenterScreen">
+    <Grid x:Name="print" Margin="0,-5,0,5">
+        <Label x:Name="lbCname" Content="[Company Name]" FontSize="15" FontWeight="ExtraBold" Foreground="Gray" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Width="137"/>
+        <Label x:Name="lbAddr" Content="[Address]" FontSize="7" Foreground="Gray" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,40,0,0" Width="137"/>
+        <Label x:Name="lbphone" Content="Phone No.: [000000000]" FontSize="7" Foreground="Gray" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,59,0,0" Width="137"/>
+        <Label x:Name="lbfax" Content="Fax: [000000000]" FontSize="7" Foreground="Gray" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,78,0,0" Width="137"/>
+        <Label x:Name="lbemail" Content="Email: [aaaaaaa@gggg.com]" FontSize="7" Foreground="Gray" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,97,0,0" Width="137"/>
+        <Label x:Name="lbbt" Content="Bill TO" FontSize="15" FontWeight="ExtraBold" Foreground="Gray" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,124,0,0" Width="137" MouseDoubleClick="tx1by1_MouseDoubleClick"/>
+        <Label x:Name="lbname" Content="[Name]" FontSize="7" Foreground="Gray" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,154,0,0" Width="137"/>
+        <Label x:Name="lbbtCname" Content="[Company Name]" FontSize="7" Foreground="Gray" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,173,0,0" Width="137"/>
+        <Label x:Name="lbbtAddr" Content="[Address]" FontSize="7" Foreground="Gray" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,192,0,0" Width="137"/>
+        <Label x:Name="lbbtphone" Content="Phone No.: [000000000]" FontSize="7" Foreground="Gray" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,211,0,0" Width="137"/>
+        <Label x:Name="lbbtemail" Content="Email: [aaaaaaa@gggg.com]" FontSize="7" Foreground="Gray" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,230,0,0" Width="137"/>
+        <TextBox x:Name="txDate" TextAlignment="Right" HorizontalAlignment="Left" Height="20" Margin="400,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txIvNo" TextAlignment="Right" HorizontalAlignment="Left"  Height="20" Margin="400,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txempID" TextAlignment="Right" HorizontalAlignment="Left"  Height="20" Margin="400,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lbDate" Content="Date:" FontSize="11" Foreground="Gray" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="360,20,0,0" Width="35" RenderTransformOrigin="0.5,0.52" Height="23"/>
+        <Label x:Name="lbivNo" Content="Invoice No.:" FontSize="11" Foreground="Gray" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="328,40,0,0" Width="67" Height="26"/>
+        <Label x:Name="lbCusID" Content="Employee ID:" FontSize="11" Foreground="Gray" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="322,60,0,0" Width="73"/>
+        <Label x:Name="lbbt_Copy" Content="Discription" FontSize="15" FontWeight="ExtraBold" Foreground="Gray" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="53,254,0,0" Width="94" Height="29"/>
+        <Label x:Name="lbbt_Copy1" Content="Tax" FontSize="15" FontWeight="ExtraBold" Foreground="Gray" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="337,254,0,0" Width="41" Height="29"/>
+        <Label x:Name="lbbt_Copy2" Content="Amount" FontSize="15" FontWeight="ExtraBold" Foreground="Gray" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="421,254,0,0" Width="77" Height="29"/>
+        <TextBox x:Name="tx1by1" HorizontalAlignment="Left"  Height="38" FontSize="20" Margin="40,288,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="266" MouseDoubleClick="tx1by1_MouseDoubleClick"/>
+        <TextBox x:Name="tx2by1" HorizontalAlignment="Left"  Height="38" FontSize="20" Margin="40,326,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="266" MouseDoubleClick="tx1by1_MouseDoubleClick"/>
+        <TextBox x:Name="tx3by1" HorizontalAlignment="Left"  Height="38" FontSize="20" Margin="40,364,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="266" MouseDoubleClick="tx1by1_MouseDoubleClick"/>
+        <TextBox x:Name="tx4by1" HorizontalAlignment="Left"  Height="40" FontSize="20" Margin="40,402,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="266" MouseDoubleClick="tx1by1_MouseDoubleClick"/>
+        <TextBox x:Name="tx5by1" HorizontalAlignment="Left"  Height="38" FontSize="20" Margin="40,442,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="266" MouseDoubleClick="tx1by1_MouseDoubleClick"/>
+        <TextBox x:Name="tx1by3" TextAlignment="Right" HorizontalAlignment="Left"  Height="38" FontSize="20" Margin="398,288,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108" MouseDoubleClick="tx2by1_MouseDoubleClick"/>
+        <TextBox x:Name="tx2by3" TextAlignment="Right" HorizontalAlignment="Left"  Height="38" FontSize="20" Margin="398,326,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108" MouseDoubleClick="tx2by1_MouseDoubleClick"/>
+        <TextBox x:Name="tx3by3" TextAlignment="Right" HorizontalAlignment="Left"  Height="38" FontSize="20" Margin="398,364,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108" MouseDoubleClick="tx2by1_MouseDoubleClick"/>
+        <TextBox x:Name="tx4by3" TextAlignment="Right" HorizontalAlignment="Left"  Height="40" FontSize="20" Margin="398,402,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108" MouseDoubleClick="tx2by1_MouseDoubleClick"/>
+        <TextBox x:Name="tx5by3" TextAlignment="Right" HorizontalAlignment="Left"  Height="38" FontSize="20" Margin="398,442,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108" MouseDoubleClick="tx2by1_MouseDoubleClick"/>
+        <TextBox x:Name="tx1by2" TextAlignment="Right" HorizontalAlignment="Left"  Height="38" FontSize="20" Margin="306,288,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="92" MouseDoubleClick="tx2by1_MouseDoubleClick"/>
+        <TextBox x:Name="tx2by2" TextAlignment="Right" HorizontalAlignment="Left"  Height="38" FontSize="20" Margin="306,326,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="92" MouseDoubleClick="tx2by1_MouseDoubleClick"/>
+        <TextBox x:Name="tx3by2" TextAlignment="Right" HorizontalAlignment="Left"  Height="38" FontSize="20" Margin="306,364,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="92" MouseDoubleClick="tx2by1_MouseDoubleClick"/>
+        <TextBox x:Name="tx4by2" TextAlignment="Right" HorizontalAlignment="Left"  Height="40" FontSize="20" Margin="306,402,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="92" MouseDoubleClick="tx2by1_MouseDoubleClick"/>
+        <TextBox x:Name="tx5by2" TextAlignment="Right" HorizontalAlignment="Left"  Height="38" FontSize="20" Margin="306,442,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="92" MouseDoubleClick="tx2by1_MouseDoubleClick"/>
+        <Label x:Name="lbAddr_Copy" Content="Sub Total" FontSize="10" Foreground="Gray" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="322,480,0,0" Width="71" Height="22"/>
+        <Label x:Name="lbphone_Copy" Content="Taxable" FontSize="10" Foreground="Gray" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="322,498,0,0" Width="71" Height="22"/>
+        <TextBox x:Name="txSubT" HorizontalAlignment="Left"  Height="20" Margin="398,480,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108" TextAlignment="Right"/>
+        <TextBox x:Name="txTexble" HorizontalAlignment="Left"  Height="20" Margin="398,500,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108" TextAlignment="Right"/>
+        <Label x:Name="lbemail_Copy2" Content="Total Amount" FontSize="10" Foreground="Gray" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="322,515,0,0" Width="71"/>
+        <TextBox x:Name="txtotam" HorizontalAlignment="Left"  Height="21" Margin="398,517,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108" TextAlignment="Right"/>
+        <Label x:Name="lbbt_Copy3" Content="Other Comments" FontSize="15" FontWeight="ExtraBold" Foreground="Gray" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,515,0,0" Width="144"/>
+        <TextBox x:Name="Commenttx" HorizontalAlignment="Left"  Height="70" Margin="40,550,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="266" MouseDoubleClick="tx1by1_MouseDoubleClick"/>
+        <Button x:Name="Mic" HorizontalAlignment="Left" Margin="176,402,0,0" VerticalAlignment="Top" Width="40" Height="55" Background="Transparent" BorderBrush="Transparent" Visibility="Hidden" Click="Mic_Click">
+            <Image x:Name="icons8_microphone_60px_1_png" Height="45" Source="icons8_microphone_60px_1.png" Stretch="Fill" Width="30" />
+        </Button>
+        <Button x:Name="stop" HorizontalAlignment="Left" Margin="281,397,0,0" VerticalAlignment="Top" Width="40" Height="55" Background="Transparent" BorderBrush="Transparent" Visibility="Hidden" Click="stop_Click">
+            <Image x:Name="icons8_unavailable_100px_1_png" Height="45" Source="icons8_unavailable_100px_1.png" Stretch="Fill" Width="30"/>
+        </Button>
+        <Label x:Name="LBlis" Content="Listening.........." Opacity="0" FontSize="15" FontWeight="Bold" FontStyle="Italic" Foreground="Gray" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="199,680,0,0" Width="179" Height="44"/>
+        <Button Style="{StaticResource ButtonStyle1}" x:Name="SubBtn" Content="Submit" FontSize="15" FontWeight="Bold" Background="Gray"   
+        	HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Margin="403,692,0,0" Height="32" Click="SubBtn_Click"/>
+        <TextBox Style="{StaticResource TextBoxStyle1}" x:Name="TextPos" FontSize="25" BorderBrush="{x:Null}"
+        	HorizontalAlignment="Left" Height="48" TextWrapping="Wrap" VerticalAlignment="Top" Width="426" Margin="40,349,0,0" Background="Gray" TextAlignment="Center" Visibility="Hidden"/>
+        <TextBox Style="{StaticResource TextBoxStyle1}" x:Name="BTtxt" FontSize="25" BorderBrush="{x:Null}"
+        	HorizontalAlignment="Left" Height="48" TextWrapping="Wrap" VerticalAlignment="Top" Width="426" Margin="53,301,0,0" Background="Gray" TextAlignment="Center" Visibility="Hidden"/>
+        <Button x:Name="Mic2" HorizontalAlignment="Left" Margin="176,354,0,0" VerticalAlignment="Top" Width="40" Height="55" Background="Transparent" BorderBrush="Transparent" Visibility="Hidden" Click="Mic2_Click" >
+            <Image x:Name="icons8_microphone_60px_1_png1" Height="45" Source="icons8_microphone_60px_1.png" Stretch="Fill" Width="30" />
+        </Button>
+        <Button x:Name="stop2" HorizontalAlignment="Left" Margin="281,354,0,0" VerticalAlignment="Top" Width="40" Height="55" Background="Transparent" BorderBrush="Transparent" Visibility="Hidden" Click="stop2_Click">
+            <Image x:Name="icons8_unavailable_100px_1_png1" Height="45" Source="icons8_unavailable_100px_1.png" Stretch="Fill" Width="30"/>
+        </Button>
+        <TextBox Style="{StaticResource TextBoxStyle1}" x:Name="TextPos2" FontSize="25" BorderBrush="{x:Null}"
+        	HorizontalAlignment="Left" Height="48" TextWrapping="Wrap" VerticalAlignment="Top" Width="426" Margin="40,349,0,0" Background="Gray" TextAlignment="Center" Visibility="Hidden"/>
+        <Button x:Name="intMic" HorizontalAlignment="Left" Margin="176,402,0,0" VerticalAlignment="Top" Width="40" Height="55" Background="Transparent" BorderBrush="Transparent" Visibility="Hidden" Click="intMic_Click">
+            <Image x:Name="icons8_microphone_60px_1_png2" Height="45" Source="icons8_microphone_60px_1.png" Stretch="Fill" Width="30" />
+        </Button>
+        <Button x:Name="intstop" HorizontalAlignment="Left" Margin="281,397,0,0" VerticalAlignment="Top" Width="40" Height="55" Background="Transparent" BorderBrush="Transparent" Visibility="Hidden" Click="intstop_Click">
+            <Image x:Name="icons8_unavailable_100px_1_png2" Height="45" Source="icons8_unavailable_100px_1.png" Stretch="Fill" Width="30"/>
+        </Button>
+        <TextBox x:Name="txtmas" HorizontalAlignment="Left" Height="23" Margin="178,150,0,0" TextWrapping="Wrap" Visibility="Hidden" VerticalAlignment="Top" Width="220" TextChanged="txtmas_TextChanged"/>
+        <TextBox x:Name="txtmas1" HorizontalAlignment="Left" Height="23" Margin="178,150,0,0" TextWrapping="Wrap" Visibility="Hidden" VerticalAlignment="Top" Width="220" TextChanged="txtmas1_TextChanged"/>
+        <TextBox x:Name="txtmas2" HorizontalAlignment="Left" Height="23" Margin="178,150,0,0" TextWrapping="Wrap" Visibility="Hidden" VerticalAlignment="Top" Width="220" TextChanged="txtmas2_TextChanged"/>
+    </Grid>
+</Window>

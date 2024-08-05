@@ -1,0 +1,28 @@
+﻿<Page x:Class="WpfApplication1.AnthClass"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApplication1"
+      mc:Ignorable="d" 
+      d:DesignHeight="527" d:DesignWidth="988"
+      Title="AnthClass">
+    <Grid>
+        <TextBox Style="{StaticResource TextBoxStyle1}" x:Name="UserName" FontSize="25" BorderBrush="{x:Null}"
+                 HorizontalAlignment="Left" Height="36" TextWrapping="Wrap" VerticalAlignment="Top" Width="290" Margin="426,286,0,0" Background="Gray" TextAlignment="Center"/>
+        <TextBox Style="{StaticResource TextBoxStyle1}" x:Name="Password" FontSize="25" TextAlignment="Center" BorderBrush="{x:Null}"
+                 HorizontalAlignment="Left" Height="36" TextWrapping="Wrap" VerticalAlignment="Top" Width="290" Margin="426,380,0,0" Background="Gray"/>
+        <Label x:Name="UserLb" Content="Username" HorizontalAlignment="Left" FontSize="30" FontWeight="Bold" Margin="210,272,0,0" VerticalAlignment="Top" Width="162"/>
+        <Label x:Name="PassLb" Content="Password" HorizontalAlignment="Left" FontSize="30" FontWeight="Bold" Margin="210,366,0,0" VerticalAlignment="Top" Width="164"/>
+        <Button Style="{StaticResource ButtonStyle1}" x:Name="ProBtn" Content="Sign In" FontSize="25" FontWeight="Bold" Background="Gray"   
+                HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Margin="744,366,0,0" Height="50" Click="ProBtn_Click">
+        </Button>
+        <Image x:Name="icons8_user_100px_png" Margin="358,264,562,205" Source="icons8_user_100px.png" Stretch="Fill"/>
+        <Image x:Name="icons8_male_user_100px_png" Margin="396,10,376,335" Source="icons8_male_user_100px.png" Stretch="Fill"/>
+        <Image x:Name="icons8_password_48px_png" Margin="358,366,562,111" Source="icons8_password_48px.png" Stretch="Fill"/>
+        <Label x:Name="UserPaLb_Copy" Content="U S E R" HorizontalAlignment="Left" FontSize="30" FontWeight="Bold" Margin="456,197,0,0" VerticalAlignment="Top" Width="115"/>
+        <Label x:Name="AuthLb" FontSize="20" FontStyle="Italic" Opacity="0" HorizontalAlignment="Left" Margin="426,438,0,0" VerticalAlignment="Top" Height="56" Width="290"/>
+        
+
+    </Grid>
+</Page>

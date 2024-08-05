@@ -1,0 +1,26 @@
+﻿<Page x:Class="WpfApplication1.SecPG"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApplication1"
+      mc:Ignorable="d" 
+      d:DesignHeight="527" d:DesignWidth="988"
+      Title="SecPG">
+
+    <Grid>
+        <Button Style="{StaticResource ButtonStyle1}" x:Name="NewBtn" FontSize="30" Background="Gray" HorizontalAlignment="Center" VerticalAlignment="Top" Width="360" Margin="308,278,296,0" Height="64" RenderTransformOrigin="0.591,0.531" Click="NewBtn_Click">
+            <Image x:Name="icons8_document_24px_png" Height="54" Source="icons8_document_24px.png" Stretch="Fill" Width="60"/>
+        </Button>
+        <Button Style="{StaticResource ButtonStyle1}" x:Name="LoadBtn" FontSize="30" Background="Gray" HorizontalAlignment="Center" VerticalAlignment="Top" Width="359" Margin="308,402,297,0" Height="64" RenderTransformOrigin="0.591,0.531" Click="LoadBtn_Click">
+            <Image x:Name="icons8_documents_folder_24px_png" Height="54" Source="icons8_documents_folder_24px.png" Stretch="Fill" Width="68"/>
+
+        </Button>
+        <Label x:Name="Newlb" Content="N e w" FontSize="30" FontWeight="ExtraBold" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="435,223,0,0" Width="105"/>
+        <Label x:Name="Loadlb" Content="L o a d" FontSize="30" FontWeight="ExtraBold" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="435,347,0,0" Width="105"/>
+        <Image x:Name="icons8_document_header_60px_png" Margin="410,36,398,331" Source="icons8_document_header_60px.png" Stretch="Fill"/>
+        <Button Style="{StaticResource ButtonStyle1}" x:Name="CCaccBtn_Copy1" Content="Create &#xA;Client&#xA;Account" FontSize="25" FontWeight="Bold" Background="Gray"   
+        	HorizontalAlignment="Left" VerticalAlignment="Top" Width="163" Margin="815,36,0,0" Height="135" Click="CCaccBtn_Copy1_Click" />
+
+    </Grid>
+</Page>
